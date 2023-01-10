@@ -19,13 +19,13 @@ violated_slot, message_content):
         """
     Define a result message structured as Lex response.
         """
-    if message_content is None:
-    return{"isValid": is_valid,
+        if message_content is None:
+            return{"isValid": is_valid,
         "violatedSlot": violated_slot,
-        message":{"contentType":
-    "PlainText", "content": message_content},
-        
-         return {
+        "message":{"contentType":
+        "PlainText", "content": message_content},
+        }
+        return {
         "isValid": is_valid,
         "violatedSlot": violated_slot,
         "message": {"contentType":
